@@ -1,0 +1,21 @@
+{
+    "name": "aksi0/yii2-novaposhta",
+    "description": "Nova Poshta Api",
+    "type": "yii2-extension",
+    "keywords": ["novaposhta"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aksi",
+            "email": "zhenja.97@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "novaposhta\\": ""
+        }
+    }
+}
