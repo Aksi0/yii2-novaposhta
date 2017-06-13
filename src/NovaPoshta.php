@@ -10,6 +10,7 @@ use aksi0\novaposhta\request\RequestFactory;
 class NovaPoshta
 {
     private $_request;
+    private $_address;
 
     public function __construct()
     {
@@ -19,8 +20,13 @@ class NovaPoshta
     /**
      * @return Address
      */
-    public function address()
+    public function getAddress()
     {
-        return new Address($this->_request);
+        if(!$this->_address) {
+            $this->_address = new Address($this->_request);
+            return $this->_address;
+        } else {
+            return $this->_address;
+        }
     }
 }

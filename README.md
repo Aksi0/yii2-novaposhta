@@ -38,7 +38,7 @@ Usage
 ```php
 $novaPoshta = Yii::$app->novaPoshta;
 // get all cities
-$cities = $novaPoshta->address()->getCities();
+$cities = $novaPoshta->getAddress()->getCities();
 // or search
-$cities = $novaPoshta->address()->getCities('Dnipro');
+$cities = $novaPoshta->getAddress()->getCities('Dnipro');
 ```
