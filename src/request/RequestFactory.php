@@ -1,6 +1,7 @@
 <?php
 namespace aksi0\novaposhta\request;
 
+use aksi0\novaposhta\converters\ConverterFactory;
 use aksi0\novaposhta\http\ClientFactory;
 use Yii;
 use yii\base\InvalidConfigException;

@@ -23,9 +23,4 @@ interface ConverterInterface
      * @return string
      */
     public function getContentType();
-    /**
-     * Get type of concrete format implementation
-     * @return string
-     */
-    public function getType();
 }

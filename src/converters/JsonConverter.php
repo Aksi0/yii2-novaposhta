@@ -31,11 +31,4 @@ class JsonConverter implements ConverterInterface
     {
         return self::CONTENT_TYPE;
     }
-    /**
-     * @inheritdoc
-     */
-    public function getType()
-    {
-        return ConverterInterface::FORMAT_JSON;
-    }
 }

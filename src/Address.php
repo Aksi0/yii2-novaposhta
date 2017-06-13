@@ -2,6 +2,9 @@
 namespace aksi0\novaposhta;
 
 
+use Yii;
+use yii\helpers\ArrayHelper;
+
 final class Address extends Api
 {
     const SCENARIO_WAREHOUSE = 'warehouse';
