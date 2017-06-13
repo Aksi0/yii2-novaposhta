@@ -11,7 +11,7 @@ class NovaPoshta
 {
     private $request;
 
-    public function _construct()
+    public function __construct()
     {
         $request = new RequestFactory();
         $this->request = $request->create();
