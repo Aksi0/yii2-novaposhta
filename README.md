@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist aksi0/yii2-novaposhta "*"
+php composer.phar require --prefer-dist aksi0/yii2-novaposhta "dev-master"
 ```
 
 or add
 
 ```
-"aksi0/yii2-novaposhta": "*"
+"aksi0/yii2-novaposhta": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
