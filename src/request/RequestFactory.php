@@ -20,11 +20,8 @@ class RequestFactory
         if (empty($components[$name]) || empty($components[$name]['api_key'])) {
             throw new InvalidConfigException('The "api_key" of component should be specified');
         }
-        if (empty($components[$name]['format'])) {
-            throw new InvalidConfigException('The "format" should be specified');
-        }
         $converterFactory = new ConverterFactory();
-        $converter = $converterFactory->create($components[$name]['format']);
+        $converter = $converterFactory->create();
         $clientFactory = new ClientFactory();
         $request = Yii::createObject(Request::class, [
             $converter,
