@@ -79,6 +79,6 @@ class Request implements RequestInterface
      */
     protected function getUrl()
     {
-        self::API_URL;
+        return self::API_URL;
     }
 }
