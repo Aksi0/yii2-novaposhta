@@ -10,6 +10,7 @@
             "email": "zhenja.97@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "yiisoft/yii2": "*"
     },
