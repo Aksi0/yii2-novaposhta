@@ -15,7 +15,7 @@ class RequestFactory
      */
     public function create()
     {
-        $name = 'novaposhta';
+        $name = 'novaPoshta';
         $components = Yii::$app->getComponents();
         if (empty($components[$name]) || empty($components[$name]['api_key'])) {
             throw new InvalidConfigException('The "api_key" of component should be specified');
