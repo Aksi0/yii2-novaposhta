@@ -36,8 +36,7 @@ class Client implements ClientInterface
             'headers' => [
                 'content-type' => $contentType
             ],
-            'body' => $request->getBody(),
-            'verify' => false // disable check ssl
+            'body' => $request->getBody()
         ];
         try {
             $response = $this->client->post($url, $options);
