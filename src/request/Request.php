@@ -1,6 +1,7 @@
 <?php
 namespace aksi0\novaposhta\request;
 use aksi0\novaposhta\converters\ConverterInterface;
+use aksi0\novaposhta\http\ClientFactory;
 
 /**
  * Class Request
@@ -78,10 +79,6 @@ class Request implements RequestInterface
      */
     protected function getUrl()
     {
-        if ($this->converter->getType() == ConverterInterface::FORMAT_XML) {
-            return self::API_URL_XML;
-        } else {
-            return self::API_URL_JSON;
-        }
+        self::API_URL;
     }
 }
