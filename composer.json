@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "novaposhta\\": ""
+            "aksi0\\novaposhta\\": "src/"
         }
     }
 }
