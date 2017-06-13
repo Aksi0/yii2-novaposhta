@@ -26,7 +26,7 @@ class RequestFactory
         $request = Yii::createObject(Request::class, [
             $converter,
             $clientFactory,
-            $components[$name]['api_key']
+            $components['novaposhta']['api_key']
         ]);
         return $request;
     }

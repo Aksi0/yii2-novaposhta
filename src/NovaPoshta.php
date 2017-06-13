@@ -18,6 +18,8 @@ class NovaPoshta
     }
 
     /**
+     * Returns all cities
+     *
      * @return Address
      */
     public function getAddress()
