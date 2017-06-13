@@ -13,8 +13,7 @@ class NovaPoshta
 
     public function __construct()
     {
-        $request = new RequestFactory();
-        $this->request = $request->create();
+        $this->request = new RequestFactory();
     }
 
     public function address()
