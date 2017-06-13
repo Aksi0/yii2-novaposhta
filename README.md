@@ -25,8 +25,20 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
-Once the extension is installed, simply use it in your code by  :
-
+1. Setup configuration:
 ```php
-<?= \novaposhta\AutoloadExample::widget(); ?>
+'components' => [
+    'novaPoshta' => [
+        'class' => 'aksi0\novaposhta\NovaPoshta',
+        'api_key' => '*specify your api key*'
+    ]
+]
+```
+2. Getting/Search cities
+```php
+$novaPoshta = Yii::$app->novaPoshta;
+// get all cities
+$cities = $novaPoshta->address()->getCities();
+// or search
+$cities = $novaPoshta->address()->getCities('Dnipro');
 ```

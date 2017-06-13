@@ -9,15 +9,18 @@ use aksi0\novaposhta\request\RequestFactory;
  */
 class NovaPoshta
 {
-    private $request;
+    private $_request;
 
     public function __construct()
     {
-        $this->request = new RequestFactory();
+        $this->_request = new RequestFactory();
     }
 
+    /**
+     * @return Address
+     */
     public function address()
     {
-        return new Address($this->request);
+        return new Address($this->_request);
     }
 }
