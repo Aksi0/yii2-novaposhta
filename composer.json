@@ -10,7 +10,7 @@
             "email": "zhenja.97@gmail.com"
         }
     ],
-    "version": "0.0.1",
+    "version": "0.1",
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.0",
